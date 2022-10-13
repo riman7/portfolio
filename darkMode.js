@@ -1,12 +1,11 @@
 if(localStorage.getItem("mode") == "dark-theme"){
     document.body.classList.add("dark-theme");
-    document.getElementById("dark-theme-icon").src = "/photos/sun.png";
+    document.getElementById("dark-theme-icon").src = "./photos/sun.png";
 }
 if(localStorage.getItem("mode") == "bright-theme"){
     document.body.classList.remove("dark-theme");
-    document.getElementById("dark-theme-icon").src = "/photos/moon.png";
+    document.getElementById("dark-theme-icon").src = "./photos/moon.png";
 }
-console.log(localStorage.getItem("mode"));
 darkMode = () => {
     if(document.body.classList.contains("dark-theme")){
         localStorage.setItem("mode", "bright-theme");
@@ -16,11 +15,11 @@ darkMode = () => {
     }
     if(localStorage.getItem("mode") == "dark-theme"){
         document.body.classList.add("dark-theme");
-        document.getElementById("dark-theme-icon").src = "/photos/sun.png";
+        document.getElementById("dark-theme-icon").src = "./photos/sun.png";
     }
     if(localStorage.getItem("mode") == "bright-theme"){
         document.body.classList.remove("dark-theme");
-        document.getElementById("dark-theme-icon").src = "/photos/moon.png";
+        document.getElementById("dark-theme-icon").src = "./photos/moon.png";
     }
 }
 
