@@ -258,7 +258,7 @@ nav.sticky{
 
     /* Home */
     .home{
-        background: url(/photos/suit-Recovered.jpg) ;
+        background: url(./photos/suit-Recovered.jpg) ;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: right;
