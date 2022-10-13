@@ -495,13 +495,13 @@ nav.sticky{
     border-radius: 1rem;
 } */
 .box1, .box3, .box5 {
-    background: url(/photos/with\ ps\ \(1\).jpg);
+    background: url(./photos/with\ ps\ \(1\).jpg);
     background-position: center;
     background-size: cover;
     border-radius: 1rem;
 }
 .box2, .box4, .box6{
-    background: url(/photos/bartaman.jpg);
+    background: url(./photos/bartaman.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 1rem;
