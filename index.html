@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio of Riman Maharjan</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <nav id="headBar">
+        <div id="logo">Mr.7</div>
+        
+        <div class="menu-btn" id="menu-btn" onclick="menuBtnClicked()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="navbar">
+            <ul class="menu">
+                <li class="active"><a href="">Home</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/projects.html">Projects</li>
+                <li><a href="/pages/contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Home Section -->
+    <div id="dark-theme">
+        <img id="dark-theme-icon" onclick="darkMode()" src="/photos/moon.png" alt="dark mode">
+    </div>
+    
+    <section class="home" id="home">
+        <div id="home-content">
+            <div class="front-text text1">Hey,</div>
+            <div class="front-text text2"> My <small>Name is</small> <big class="my-name">R<small>IMAN</small> M<small>AHARJAN</small></big></div>
+            <div class="front-text text3">W<small>ELCOME to</small> portfolio <small>of a</small> 
+                <div id="changing-name">
+                    "<div id="name">Programer</div>"
+                </div>
+                <div class="home-hire-me-btn">
+                    <button id="hire-me-btn" onclick="hireMe()">Hire Me</button>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="home2">
+        <div class="home2-introduction">
+        <div class="intro">
+            <div class="introduction">
+                <h2>Introduction</h2>
+                <div class="image"><img id="image1" src="/photos/redprofile.jpg"></div>
+                <p>Hello! My name is <b>Riman Maharjan</b> and I am a graphic designer and a web developer from <a href="https://en.wikipedia.org/wiki/Nepal" target="_blank">Nepal</a>. It's almost been 4 years since I dived into the digital world. From turning on computer in computer lab of school for first time, to printing "Hello World" in C, putting myself on top of Mt. Everst using photoshop and now I am here building a professional portfolio website.... Yeah! it's been a great journey.</p>
+           </div> 
+           <div class="journey"> 
+                <h2>Journey</h2>
+                <p>
+                I studied in Adarha Yog - Hari for 13 years and completed S.E.E.(grade 10) on year 201#. Since I had already found my passion in the field of computer, I decided to choose the field of Computer Science and joied Viswa Niketan for further study of +2. As  I loved photography, initially my interest was on graphic designing. So I got my hand dirty on photoshop, illustration, filmora, premire pro and so on... Gradually I learned HTML and CSS following the trends of that time. I got crazy when I realized CSS was the photoshop of website. So I keep learning web development and the journey begains...      
+                </p>
+            </div>
+        </div>
+        </div>
+        <!-- <div class="testimonial">
+            <h2>Testimonial</h2>
+            <div class="quote-container">
+                <div class="box box1"><i class="fa fa-quote-left"></i><br><p>
+                    Your love makes me strong and your hates makes me unstoppable.</p></div>
+                <div class="box box2"><i class="fa fa-quote-left"></i><p>Hope for the best and perpare for the worst.</p></div>
+                <div class="box box3"><i class="fa fa-quote-left"></i><p> Once upon a time, a wise man said nothing. So speak only when your words are better than silence.</p></div>
+            </div>
+        </div> -->
+
+    <div class="testimonial">
+        <h2>Testimonial</h2>
+        <div class="slider">
+            <div class="slide s1 active"><div class="box box1"><i class="fa fa-quote-left"></i><br><p>
+                Your love makes me strong and your hates makes me unstoppable.</p></div></div>
+            <div class="slide s2"><div class="box box2"><i class="fa fa-quote-left"></i><p>Hope for the best and perpare for the worst.</p></div></div>
+            <div class="slide s3"><div class="box box3"><i class="fa fa-quote-left"></i><p> Once upon a time, a wise man said nothing. So speak only when your words are better than silence.</p></div></div>
+            <div class="slide s4"><div class="box box4"><i class="fa fa-quote-left"></i><p> Once upon a time, a wise man said nothing. So speak only when your words are better than silence.</p></div></div>
+            <div class="slide s5"><div class="box box5"><i class="fa fa-quote-left"></i><p> Once upon a time, a wise man said nothing. So speak only when your words are better than silence.</p></div></div>
+            <div class="slide s6"><div class="box box6"><i class="fa fa-quote-left"></i><p> Once upon a time, a wise man said nothing. So speak only when your words are better than silence.</p></div></div>
+            <button class="btn btn-left"> <i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+        <button class="btn btn-right"> <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        </div>
+        
+     </div>
+
+        </div>
+
+
+    </div>
+
+        <div id="inspiration">
+            <h2>Inspiration of My LIFE</h2>
+            <p>
+                Some people/characters are born to inspire people. Introducing some people that gave some dimension to different part of my life.
+            </p>
+            <div class="persons">
+                <div class="person ronaldo row-1">
+                    <div class="person-pic"><img src="https://pbs.twimg.com/ad_img/1432804763633082368/lFN4TZCI?format=jpg&name=900x900"  alt="Sorry"></div>
+                    <div class="person-detail">
+                        <div class="person-info"><h3>Cristiano Ronaldo</h3><span>Portuguese football forward who is one of the greatest players of his generation.</span>
+                    <div class="person-links"><a href="https://www.facebook.com/Cristiano/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/Cristiano" target="_blank" class="fa fa-twitter"><a href="https://www.instagram.com/cristiano/?hl=en" target="_blank" class="fa fa-instagram"></a></div></div></div>
+                </div>
+                <div class="person elon-musk row-1">
+                    <div class="person-pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/800px-Elon_Musk_Royal_Society_%28crop2%29.jpg" alt=""></div>
+                    <div class="person-detail">
+                        <div class="person-info"><h3>Elon Musk</h3><span>Billionaire. Founder, CEO and Chief Engineer at SpaceX, Tesla;Neuralink and OpenAI.etc.</span>
+                        <div class="person-links"><a href="#" class="fa fa-facebook"></a>
+                        <a href="#" target="_blank" class="fa fa-twitter"><a href="#" class="fa fa-instagram" target="_blank"></a></div></div></div>
+                </div>
+                <div class="person kirtichow row-1">
+                    <div class="person-pic"><img src="https://yt3.ggpht.com/ytc/AMLnZu9ph05bdkWZiwr6sG5eCj5UPxizfX5L-VHPtfXxbw=s900-c-k-c0x00ffffff-no-rj"  alt=""></div>
+                    <div class="person-detail">
+                        <div class="person-info"><h3>KirtiChow</h3><span>Kirti Chowdhary, an animator and a youtuber. Pioneer of the introvert society</span><div class="person-links"><a href="#" target="_blank"class="fa fa-facebook"></a>
+                    <a href="#" target="_blank" class="fa fa-twitter" ><a href="#" class="fa fa-instagram" target="_blank"></a></div></div></div>
+                </div>
+                <div class="person piximperfect row-2">
+                    <div class="person-pic"><img src="https://www.adobe.com/content/dam/www/us/en/max/speakers/Unmesh-Dinda_MAX2020.jpg" alt=""></div>
+                    <div class="person-detail">
+                        <div class="person-info"><h3>Piximperfect</h3><span>Unmesh Dinda. Master of Photoshop. Perfect from pixel. Youtuber. "Keep creating"</span>
+                    <div class="person-links"><a href="#" class="fa fa-youtube-play" target="_blank"></a>
+                    <a href="#" class="fa fa-twitter"><a href="#" class="fa fa-instagram"></a></div></div></div>
+                </div>
+                <div class="person benny-production row-2">
+                    <div class="person-pic"><img src="data:image/jpeg;base64,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" alt=""></div>
+                    <div class="person-detail">
+                        <div class="person-info"><h3>Benny Production</h3><span>Benjamin. Digital artist and YouTuber from the Netherlands. "there you go..."</span>
+                        <div class="person-links"><a href="#" class="fa fa-youtube-play" target="_blank"></a>
+                        <a href="#" class="fa fa-twitter"><a href="#" class="fa fa-instagram"></a></div></div></div>
+                </div>    
+                <div class="person coding-nepal">
+                    <div class="person-pic"><img src="https://miro.medium.com/fit/c/176/176/1*IziJWuyyUSPQJu_BejHh2Q.png" alt="PHOTO"></div>
+                    <div class="person-detail">
+                        <div class="person-info">
+                            <h3>Coding Nepal</h3><span>Awesome in CSS. A coder, youtuber from Nepal.</span>
+                            <a href="https://www.youtube.com/c/CodingNepal/about" class="fa fa-youtube-play" target="_blank"></a>
+                            <a href="#" target="_blank" class="fa fa-twitter">
+                            <a href="#" target="_blank" class="fa fa-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="person tyrion row-3">
+                    <div class="person-pic"><img src="https://i.pinimg.com/originals/64/6e/89/646e891fd7a3d12f7198175be4061a4c.jpg"  alt=""></div>
+                    <div class="person-detail">
+                        <div class="person-info"><h3>Tyrion</h3>Tyrion Lanister. Character from "Game Of Thrones". Dwraf. Mind is his power. </span>
+                    <div class="person-links">
+                        <a class="fa fa-television" href="https://www.imdb.com/title/tt0944947/characters/nm0227759" target="_blank"></a>
+                        <a target="_blank" href="" class="fa fa-quote-left" aria-hidden="true"></a>
+                    </div></div></div>
+                </div>
+                <div class="person tony-stark row-3">
+                    <div class="person-pic"><img src="https://i.pinimg.com/736x/2a/88/e6/2a88e65f1ff54d776a1cef7ff88a3333.jpg" alt=""></div>
+                    <div class="person-detail">
+                        <div class="person-info">
+                            <h3>Tony Stark</h3><span>A charcter from "MCU". Iron Man. Attitude. Genius, billionaire, playboy, philanthropist.</span>
+                            <div class="person-links">
+                                <a href="#" target="_blank"  class="fa fa-television"></a>
+                                <a href="#" target="_blank"  class="fa fa-twitter"></a>
+                                <a href="#" target="_blank" class="fa fa-instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                <div class="honourable-names">
+                    <ul>
+                        <li>Little Finger (G.O.T.)</li>
+                        <li>Web Dev Simplified</li>
+                        <li>Developer Filip</li>
+                        <li>Rg Bucket List</li>
+                        <i class="fa fa-times" onclick = 'otherNames()' aria-hidden="true"></i>
+                    </ul>
+                </div>
+                <div class="other-names ">
+                    <a onclick = 'otherNames()'>Some honourable mentions...</a>
+                </div>
+                
+            </div>
+        </div>
+            
+    </section>
+
+    <script src="index.js"></script>
+    <script src="/darkMode.js"></script>
+    
+</body>
+</html>

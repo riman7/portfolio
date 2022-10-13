@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Sweeper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        #headBar{
+            background-color: var(--nav-background-color);
+        }
+    </style>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <nav id="headBar">
+        <div id="logo">Mr.7</div>
+        
+        <div class="menu-btn" id="menu-btn" onclick="menuBtnClicked()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="navbar">
+            <ul class="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li class="active"><a href="">About</a></li>
+                <li><a href="/pages/projects.html">Projects</li>
+                <li><a href="/pages/contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="dark-theme">
+        <img id="dark-theme-icon" onclick="darkMode()" src="/photos/moon.png" alt="dark mode">
+    </div>
+
+    <section class="about" id="about">
+        <h1>About Me</h1>
+        <p>
+            I am a Web Developer and a graphic designer.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus ut doloribus, voluptate possimus culpa accusamus animi unde debitis aliquid perspiciatis ad explicabo rerum laudantium facilis pariatur maiores! Ad, quasi!
+        </p>
+
+        <div class="container-my-info">
+            <div class="border-box"></div>
+            <h3>Personal info</h3>
+            <div class="col-1">
+                <div class="col-1-1">
+                    <div class="info">
+                        <b>Name:</b> Riman Maharjan
+                    </div>
+                    <div class="info">
+                        <b>Birthday:</b> 18 Nov 2004
+                    </div>
+                    <div class="info">
+                        <b>Age:</b> 17
+                    </div>
+                    <div class="info">
+                        <b>Phone:</b> +977 9840511294
+                    </div>
+                </div>
+    
+                <div class="col-1-2">
+                    <div class="info">
+                        <b>County:</b> Nepal
+                    </div>
+                    <div class="info">
+                        <b>City:</b> Kathmandu
+                    </div>
+                    <div class="info">
+                        <b>Website:</b> loading...
+                    </div>
+                    <div class="info">
+                        <b>Email:</b> rimanmaharjan77@gmail.com
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <button class="hire-me">Hire Me</button>
+                <button class="cv">Download C.V.</button>
+            </div>
+        </div>
+
+        <div class="education side-div">
+            <div>
+                <h3>Study</h3>
+                <div class="education-list">
+                    +2 Computer Science<span>(studying...)</span>
+                </div>
+            </div>
+        </div>
+        <div class="hobbies side-div">
+            <div>
+                <h3>Hobbies</h3>
+                <div class="hobbies-list">
+                    <a href="" class='fa fa-laptop'></a>
+                    <a href="https://youtube.com/playlist?list=PLbseDFvZ1aaEb-0DmwjVm_dERMuOwS2j3" target="_blank" class="fa fa-headphones"></a>
+                    <a href="" class="fa fa-camera"></a>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="ability">
+            <div class="abiltiy-1">
+                <p>I've forged my skills on photoshop, lightroom, html, css, javascript, C, wordpress, wix, canva, premire pro, filmora etc. at the age of 17. </p>
+            </div>
+            <div class="back-circle back-circle-1">
+                <p>Hope to see all the bars filled next time you visit</p>
+            </div>
+            <div class="design-circle-box">
+                <div class="back-circle back-circle-2"></div>
+                <div class="back-circle back-circle-3"></div>
+                <div class="back-circle back-circle-4"></div>
+                <div class="back-circle back-circle-5"></div>
+                <div class="back-circle back-circle-6"></div>
+                <div class="back-circle back-circle-7"></div>
+                <div class="back-circle back-circle-8"></div>
+                <div class="back-circle back-circle-9"></div>
+            </div>
+            
+
+
+            <div class="skills non-swiper">
+                <div class="coding-skills">
+                    <h3>Coding Skills</h3>
+                    <div class="skill-display coding-skills-display">
+                        <div class="skill-detail">
+                            <span>HTML</span><span>98%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="html-skill"></div>
+                        </div>
+                        <div class="skill-detail">
+                            <span>CSS</span><span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="css-skill"></div>
+                        </div>
+                        <div class="skill-detail">
+                            <span>JavaScript</span><span>30%</span>
+                        </div>
+                        <div class="skill-bar ">
+                            <div class="js-skill"></div>
+                        </div>
+                        <div class="skill-detail">
+                            <span>C-programming</span><span>55%</span>
+                        </div>
+                        <div class="skill-bar ">
+                            <div class="c-skill"></div>
+                        </div>
+                        <div class="skill-detail">
+                            <span>Python</span><span>2%</span>
+                        </div>
+                        <div class="skill-bar ">
+                            <div class="python-skill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="designing-skills">
+                    <h3>Designing Skills</h3>
+                    <div class="skills-display designing-skill-display">
+                        <div class="skill-detail">
+                            <span>Photoshop</span><span>93%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="photoshop-skill"></div>
+                        </div>
+                        <div class="skill-detail">
+                            <span>CSS</span><span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="css-skill"></div>
+                        </div>
+                        <div class="skill-detail">
+                            <span>Lightroom</span><span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="lr-skill"></div>
+                        </div>
+                        <div class="skill-detail">
+                            <span>Premire Pro</span><span>39%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="pr-skill"></div>
+                        </div>
+                        <div class="skill-detail">
+                            <span>Blender</span><span>3%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="blender-skill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills swiper">
+                <div class="swiper-wrapper">
+                    <div class="coding-skills swiper-slide">
+                        <h3>Coding Skills</h3>
+                        <div class="skill-display coding-skills-display">
+                            <div class="skill-detail">
+                                <span>HTML</span><span>98%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="html-skill"></div>
+                            </div>
+                            <div class="skill-detail">
+                                <span>CSS</span><span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="css-skill"></div>
+                            </div>
+                            <div class="skill-detail">
+                                <span>JavaScript</span><span>30%</span>
+                            </div>
+                            <div class="skill-bar ">
+                                <div class="js-skill"></div>
+                            </div>
+                            <div class="skill-detail">
+                                <span>C-programming</span><span>55%</span>
+                            </div>
+                            <div class="skill-bar ">
+                                <div class="c-skill"></div>
+                            </div>
+                            <div class="skill-detail">
+                                <span>Python</span><span>2%</span>
+                            </div>
+                            <div class="skill-bar ">
+                                <div class="python-skill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="designing-skills swiper-slide">
+                        <h3>Designing Skills</h3>
+                        <div class="skills-display designing-skill-display">
+                            <div class="skill-detail">
+                                <span>Photoshop</span><span>93%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="photoshop-skill"></div>
+                            </div>
+                            <div class="skill-detail">
+                                <span>CSS</span><span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="css-skill"></div>
+                            </div>
+                            <div class="skill-detail">
+                                <span>Lightroom</span><span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="lr-skill"></div>
+                            </div>
+                            <div class="skill-detail">
+                                <span>Premire Pro</span><span>39%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="pr-skill"></div>
+                            </div>
+                            <div class="skill-detail">
+                                <span>Blender</span><span>3%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="blender-skill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+           
+        
+        <div class="comming-soon">
+            <h3>More Comming Soon...</h3>
+        </div>
+    </section>
+
+<!-- JavaScripts -->
+    <!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+</script>
+
+<script src="/pages/about.js"></script>
+<script src="/darkMode.js"></script>
+</body>
+
+</html>
