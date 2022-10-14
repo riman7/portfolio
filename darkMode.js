@@ -1,24 +1,10 @@
-console.log(document.URL);
-console.log(window.location.pathname);
-
-
 if(localStorage.getItem("mode") == "dark-theme"){
     document.body.classList.add("dark-theme");
-    if(document.URL == "https://riman7.github.io/portfolio/"){
-        document.getElementById("dark-theme-icon").src = "./photos/sun.png";
-    }
-    else{
-        document.getElementById("dark-theme-icon").src = "../photos/sun.png";
-    }
+    document.getElementById("dark-theme-icon").src = "./dark theme photos/sun.png";
 }
 if(localStorage.getItem("mode") == "bright-theme"){
     document.body.classList.remove("dark-theme");
-    if(document.URL == "https://riman7.github.io/portfolio/"){
-        document.getElementById("dark-theme-icon").src = "./photos/moon.png";
-    }
-    else{
-        document.getElementById("dark-theme-icon").src = "../photos/moon.png";
-    }
+    document.getElementById("dark-theme-icon").src = "./dark theme photos/moon.png";
 }
 console.log(document);
 darkMode = () => {
@@ -30,21 +16,11 @@ darkMode = () => {
     }
     if(localStorage.getItem("mode") == "dark-theme"){
         document.body.classList.add("dark-theme");
-        if(document.URL == "https://riman7.github.io/portfolio/"){
-        document.getElementById("dark-theme-icon").src = "./photos/sun.png";
-    }
-    else{
-        document.getElementById("dark-theme-icon").src = "../photos/sun.png";
-    }
+        document.getElementById("dark-theme-icon").src = "./dark theme photos/sun.png";
     }
     if(localStorage.getItem("mode") == "bright-theme"){
         document.body.classList.remove("dark-theme");
-        if(document.URL == "https://riman7.github.io/portfolio/"){
-        document.getElementById("dark-theme-icon").src = "./photos/moon.png";
-        }
-        else{
-            document.getElementById("dark-theme-icon").src = "../photos/moon.png";
-        }
+        document.getElementById("dark-theme-icon").src = "./dark theme photos/moon.png";
     }
    
 }
