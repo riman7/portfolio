@@ -12,6 +12,10 @@ menuBtnClicked = () => {
     headBar.classList.toggle("active");
 }
 
+comsole.log(document.URL);
+console.log(window.location.pathname);
+
+
 // Changing Name
 let names = ["Graphic Designer", "Digital Artist", "Creator", "Developer", "Programer"];
 

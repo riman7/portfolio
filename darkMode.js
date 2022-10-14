@@ -1,5 +1,5 @@
 comsole.log(document.URL);
-console.log(window.location);
+console.log(window.location.pathname);
 
 
 if(localStorage.getItem("mode") == "dark-theme"){
