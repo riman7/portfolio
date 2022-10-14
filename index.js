@@ -12,7 +12,7 @@ menuBtnClicked = () => {
     headBar.classList.toggle("active");
 }
 
-comsole.log(document.URL);
+console.log(document.URL);
 console.log(window.location.pathname);
 
 
