@@ -6,6 +6,7 @@ if(localStorage.getItem("mode") == "bright-theme"){
     document.body.classList.remove("dark-theme");
     document.getElementById("dark-theme-icon").src = "./photos/moon.png";
 }
+console.log(document);
 darkMode = () => {
     if(document.body.classList.contains("dark-theme")){
         localStorage.setItem("mode", "bright-theme");
@@ -21,5 +22,6 @@ darkMode = () => {
         document.body.classList.remove("dark-theme");
         document.getElementById("dark-theme-icon").src = "./photos/moon.png";
     }
+   
 }
 
