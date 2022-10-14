@@ -1,6 +1,6 @@
 if(localStorage.getItem("mode") == "dark-theme"){
     document.body.classList.add("dark-theme");
-    if(document == "https://riman7.github.io/portfolio/"){
+    if(document.URL == "https://riman7.github.io/portfolio/"){
         document.getElementById("dark-theme-icon").src = "./photos/sun.png";
     }
     else{
@@ -9,7 +9,7 @@ if(localStorage.getItem("mode") == "dark-theme"){
 }
 if(localStorage.getItem("mode") == "bright-theme"){
     document.body.classList.remove("dark-theme");
-    if(document == "https://riman7.github.io/portfolio/"){
+    if(document.URL == "https://riman7.github.io/portfolio/"){
         document.getElementById("dark-theme-icon").src = "./photos/moon.png";
     }
     else{
@@ -26,7 +26,7 @@ darkMode = () => {
     }
     if(localStorage.getItem("mode") == "dark-theme"){
         document.body.classList.add("dark-theme");
-        if(document == "https://riman7.github.io/portfolio/"){
+        if(document.URL == "https://riman7.github.io/portfolio/"){
         document.getElementById("dark-theme-icon").src = "./photos/sun.png";
     }
     else{
@@ -35,7 +35,7 @@ darkMode = () => {
     }
     if(localStorage.getItem("mode") == "bright-theme"){
         document.body.classList.remove("dark-theme");
-        if(document == "https://riman7.github.io/portfolio/"){
+        if(document.URL == "https://riman7.github.io/portfolio/"){
         document.getElementById("dark-theme-icon").src = "./photos/moon.png";
         }
         else{
