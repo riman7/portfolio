@@ -1,3 +1,7 @@
+comsole.log(document.URL);
+console.log(window.location);
+
+
 if(localStorage.getItem("mode") == "dark-theme"){
     document.body.classList.add("dark-theme");
     if(document.URL == "https://riman7.github.io/portfolio/"){
