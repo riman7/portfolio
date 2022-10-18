@@ -8,6 +8,10 @@
     <!-- Sweeper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- My css -->
     <link rel="stylesheet" href="../style.css">
 
     <style>
@@ -55,7 +59,7 @@
                         <b>Name:</b> Riman Maharjan
                     </div>
                     <div class="info">
-                        <b>Birthday:</b> 18 Nov 2004
+                        <b>Birthdate:</b> 18 Nov, 2004
                     </div>
                     <div class="info">
                         <b>Age:</b> 17
@@ -73,7 +77,9 @@
                         <b>City:</b> Kathmandu
                     </div>
                     <div class="info">
-                        <b>Website:</b> loading...
+                        <b>Hobbies:</b> <span class="hobbies"> <a href="" class='fa fa-laptop'></a>
+                        <a href="https://youtube.com/playlist?list=PLbseDFvZ1aaEb-0DmwjVm_dERMuOwS2j3" target="_blank" class="fa fa-headphones"></a>
+                        <a href="" class="fa fa-camera"></a></span>
                     </div>
                     <div class="info">
                         <b>Email:</b> rimanmaharjan77@gmail.com
@@ -86,7 +92,8 @@
             </div>
         </div>
 
-        <div class="education side-div">
+        <!-- <div data-aos="fade-right" data-aos-easing="linear"
+        data-aos-duration="500" class="education side-div">
             <div>
                 <h3>Study</h3>
                 <div class="education-list">
@@ -94,7 +101,8 @@
                 </div>
             </div>
         </div>
-        <div class="hobbies side-div">
+        <div data-aos="fade-left" data-aos-easing="linear"
+        data-aos-duration="500" class="hobbies side-div">
             <div>
                 <h3>Hobbies</h3>
                 <div class="hobbies-list">
@@ -103,7 +111,7 @@
                     <a href="" class="fa fa-camera"></a>
                 </div>
             </div>
-        </div>
+        </div> -->
         
 
         <div class="ability">
@@ -298,8 +306,25 @@
 });
 </script>
 
+<!-- AoS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+    <!-- // Swiper // -->
 <script src="./about.js"></script>
 <script src="../darkMode.js"></script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: false,
+            distance:'200px',
+            duration: 1000,
+            delay: 200
+        })
+    </script>
 </body>
 
 </html>

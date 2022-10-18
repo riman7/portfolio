@@ -25,18 +25,3 @@ start = () =>{01
     }
 }
 setInterval(start, 2000);
-
-//<--swiper-->
-
-// resized = () =>{
-//     var width
-//     checkWidth = () =>{
-//         width = document.body.clientWidth;
-//         console.log(width + "px");
-//         }
-//     checkWidth();
-//     if(width >= 700){
-//         document.getElementsByClassName('skills').removeClass('swiper');
-//     }
-// }
-// window.addEventListener('resize', resized);

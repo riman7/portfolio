@@ -10,7 +10,6 @@ text-decoration: none;
 
 :root{
     /* For 1rem = 10px */
-    
     font-size: 62.5%;
     --theme-color: hsl(271, 90%, 60%);
     --hue-theme-color: 271;
@@ -75,10 +74,8 @@ body h2{
     display: flex;
     height: 100%;
     align-items: center;
-    margin-left: 1rem;
     font-size: 3.5rem;
     cursor: default;
-    /* color: var(--text-color); */
     color: var(--secondary-color);
     text-shadow: .01em .01em .7em white;
     transition: var(--transition);
@@ -90,7 +87,7 @@ body h2{
     width: 100vw;       height: 4rem;
     display: flex;
     justify-content: space-between;
-    padding: .8rem, 0;
+    padding: 0 1em;
 }
 #navbar{
     margin-right: 1rem;
@@ -99,10 +96,10 @@ body h2{
 }
 #navbar ul li{
     list-style: none;
+    margin-left: 4rem;
     display: inline-block;
     font-size: 2.5rem;
     color: var(--secondary-color);
-    margin-right: 1.5em;
 }
 #navbar ul li.active{
     text-shadow: .01em .01em .8em white;
@@ -130,7 +127,6 @@ nav.sticky{
 .menu-btn{
     display: none;
     cursor: pointer;
-    margin-right: 5rem;
     transition: ease 0.3s;
 }
 .menu-btn .bar1, .bar2, .bar3{
@@ -150,187 +146,82 @@ nav.sticky{
     transform: translateY(-.5rem) rotate(45deg);
 }
 
-
-/* Responsive */
-@media (max-width: 770px){
-    #home #home-content{
-        width: 55vw;
-    }
-    .menu-btn{
-        display: inline;
-    }
-    #logo{
-        margin-left: 1.5rem;
-        font-size: 3.5rem;
-    }
-    #navbar{
-        display: none;
-    }
-   
-    #headBar.active{
-        background-color: hsl(0, 0%, 13%);
-        height: 100vh;
-        display: inline-block;
-    }
-    #headBar.active .menu-btn{
-        position: absolute;
-        top: 1rem;      right: .1rem;
-    }
-    #headBar.active #navbar{
-        position: absolute;     
-        top: 50%;       left: 50%;
-        transform: translate(-50%, -50%);
-        display: block;
-    }
-    #headBar.active #navbar ul.menu li{
-        display: block;
-        text-align: center;
-        font-size: 1.8em;
-        margin: .3em;
-    }
-    #home #home-content .front-text{
-        margin: 1rem;
-    }
-    .front-text.text1{
-        font-size: calc(var(--font-size-of-home) - 1rem);
-    }
-    .front-text .my-name{
-        display: block;
-        font-size: calc(var(--font-size-of-home) - .5rem );
-    }
-    .front-text.text2{
-        font-size: calc(var(--font-size-of-home) - .5rem);
-        margin-left: 2.5rem;
-    }
-    .front-text.text3{
-        font-size: calc(var(--font-size-of-home) - .5rem);
-        margin-left: 2.8rem;
-    }
-    .front-text.text3 #changing-name #name{
-        font-size: calc(var(--font-size-of-home) );
-    }
-    #dark-theme-icon{
-        right: 1.2rem;        top: 4rem;
-        width: 4.5rem;
-    }
-    .introduction, .journey{
-        box-shadow: 0px 0px 6px var(--theme-color);
-    }
-    
+/* Home */
+.home{
+    background: url(./photos/suit-Recovered.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: var(--secondary-color);
+    height: 100vh;      width: 100vmax;     width: auto;
+    min-height: 40rem;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
 }
-@media (max-width: 700px){
-    #home #home-content{
-        width: 65vw;
-    }
+.front-text{
+    font-size: var(--font-size-of-home);
+    text-align: left;
+    margin: .7rem;      margin-left: var(--margin-left-of-home);
+    transition: var(--transition);
+    cursor: default;
 }
-@media (max-width: 600px){
-    #home #home-content{
-        background-color: hsla(0, 0%, 0%, 0.103);
-        width: 100vw;
-    }
-/* Home 1 */
-        #home #home-content .home-hire-me-btn #hire-me-btn{
-            background-color: var(--theme-color);
-            border: .27rem solid var(--text-color);
-            color: var(--text-color);
-            text-shadow: 0 0 2em var(--text-color);
-            margin-top: 1.5rem;
-        }
-        #home #home-content .home-hire-me-btn #hire-me-btn:hover{
-            background-color: transparent;
-            color: var(--theme-color);
-            border: .2rem solid var(--theme-color);
-            transition: all ease .35s;
-            text-shadow:none;
-        }
-        .front-text.text3 #changing-name{
-            background-color: hsla(0, 0%, 100%, 0.034);
-        }
-        
-
-    }
-    @media (max-width: 550px){
-        .testimonial .quote-container .box{
-            width: 80vw;
-            height: 120vw;
-        }
-    }
-
-    /* Home */
-    .home{
-        background: url(./photos/suit-Recovered.jpg) ;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: right;
-        color: var(--secondary-color);
-        height: 100vh;      width: 100vmax;     width: auto;
-        display: flex;
-        align-items: center;
-        transition: var(--transition);
-    }
-    .front-text{
-        font-size: var(--font-size-of-home);
-        text-align: left;
-        margin: .7rem;      margin-left: var(--margin-left-of-home);
-        transition: var(--transition);
-        cursor: default;
-    }
-    .text1{
-        font-size: calc(var(--font-size-of-home) + 1rem);
-        font-weight: 170;
-    }
-    .text2{
-        margin-left: calc(var(--margin-left-of-home) + .5rem);
-    }
-    .text3{
-        margin-left: calc(var(--margin-left-of-home) + 2rem);
-    }
-    .my-name{
-        font-size:  var(--font-size-of-home);
-    }
-    /* changing name */
-    #changing-name{
-        color: var(--theme-color);
-        transition: .7s;
-    }
-    #home-content{
-        width: 70vw;
-    }
-    #home-content #changing-name{
-        font-size: calc(var(--font-size-of-home) + 1rem) ;
-        display: flex;
-        justify-content: center;
-        height: 90px;
-        line-height: 90px;
-        overflow: hidden;
-        transition: 1s;
-    }
-    .home-hire-me-btn{
-        display: flex;
-        justify-content: center;
-        transition: .9s;
-    }
-    #home #home-content .home-hire-me-btn #hire-me-btn{
-        margin-top: .5rem;
-    }
-    .home-hire-me-btn #hire-me-btn{
-        cursor: pointer;
-        background-color: transparent;
-        color: var(--theme-color);
-        border: .27rem solid var(--theme-color);
-        border-radius: .5rem;
-        font-size: 2.5rem;      font-weight: 600;
-        padding: .5rem 1rem;
-        margin-top: 2rem;
-        transition: all ease .35s;
-    }
-    .home-hire-me-btn #hire-me-btn:hover{
-        background-color: var(--theme-color);
-        border: .2rem solid var(--secondary-color);
-        color: var(--secondary-color);
-        font-weight: 800;
-        text-shadow: 0 0 2em var(--secondary-color);
-    }
+.text1{
+    font-size: calc(var(--font-size-of-home) + 1rem);
+    font-weight: 170;
+}
+.text2{
+    margin-left: calc(var(--margin-left-of-home) + .5rem);
+}
+.text3{
+    margin-left: calc(var(--margin-left-of-home) + 2rem);
+}
+.my-name{
+    font-size:  var(--font-size-of-home);
+}
+/* changing name */
+#changing-name{
+    color: var(--theme-color);
+    transition: .7s;
+}
+#home-content{
+    width: 70vw;
+}
+#home-content #changing-name{
+    font-size: calc(var(--font-size-of-home) + 1rem) ;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    transition: 1s;
+}
+.home-hire-me-btn{
+    display: flex;
+    justify-content: center;
+    transition: .9s;
+}
+#home #home-content .home-hire-me-btn #hire-me-btn{
+    margin-top: .5rem;
+}
+.home-hire-me-btn #hire-me-btn{
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--theme-color);
+    border: .27rem solid var(--theme-color);
+    border-radius: .5rem;
+    font-size: 2.5rem;      font-weight: 600;
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+    transition: all ease .35s;
+}
+.home-hire-me-btn #hire-me-btn:hover{
+    background-color: var(--theme-color);
+    border: .2rem solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight: 800;
+    text-shadow: 0 0 2em var(--secondary-color);
+}
 
 /* Home2 */
 .home2-introduction{
@@ -351,6 +242,7 @@ nav.sticky{
     padding: 1em;
     border: .001rem solid var(--theme-color);
     box-shadow: 0px 0px 6px var(--theme-color);
+    overflow: hidden;
 }
 .journey h2{
     text-align: right;
@@ -380,12 +272,13 @@ nav.sticky{
     border: .2rem solid var(--theme-color);
 }
 
+
 .testimonial h2{
     text-align: center;
 }
 .testimonial{
     display: grid;
-    height: 100vh;
+    height: 60rem;
     width: 100%;
     align-items: center;
     align-content: center;
@@ -398,7 +291,8 @@ nav.sticky{
     align-items: center;
     position: relative;
     width: 90rem;      height: 55rem;
-    overflow: hidden;   
+    max-width: 90vw;
+    overflow: hidden; 
   }
   
   .slide {
@@ -426,8 +320,6 @@ nav.sticky{
     top: 2%;
     padding: 0%;
     background: none;
-    /* background: var(--secondary-color); */
-    /* box-shadow: 0 0 1rem var(--secondary-color); */
     border-radius: 50%;
     width: 7rem;    height: 7rem;
     display: flex;
@@ -481,19 +373,6 @@ nav.sticky{
     border-radius: 1rem;
     background-color: var(--text-background-color);
 }
-
-/* .slide:nth-child(2n + 1) {
-    background: url(/photos/with\ ps\ \(1\).jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 1rem;
-}
-.slide:nth-child(2n) {
-    background: url(/photos/bartaman.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 1rem;
-} */
 .box1, .box3, .box5 {
     background: url(./photos/with\ ps\ \(1\).jpg);
     background-position: center;
@@ -511,13 +390,111 @@ nav.sticky{
     box-shadow: 0 0 15px var(--theme-color);
 }
 
+/* Responsive */
+@media (max-width: 770px){
+    #home #home-content{
+        width: 55vw;
+    }
+    .menu-btn{
+        display: inline;
+    }
+    #navbar{
+        display: none;
+    }
+   
+    #headBar.active{
+        background-color: hsl(0, 0%, 13%);
+        height: 100vh;
+        display: inline-block;
+    }
+    #headBar.active .menu-btn{
+        position: absolute;
+        top: 1rem;      right: 2rem;
+    }
+    #headBar.active #navbar{
+        position: absolute;     
+        top: 50%;       left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+    }
+    #headBar.active #navbar ul.menu li{
+        display: block;
+        text-align: center;
+        font-size: 1.8em;
+        margin: .3em;
+    }
+    #home #home-content .front-text{
+        margin: 1rem;
+    }
+    .front-text.text1{
+        font-size: calc(var(--font-size-of-home) - 1rem);
+    }
+    .front-text .my-name{
+        display: block;
+        font-size: calc(var(--font-size-of-home) - .5rem );
+    }
+    .front-text.text2{
+        font-size: calc(var(--font-size-of-home) - .5rem);
+        margin-left: 2.5rem;
+    }
+    .front-text.text3{
+        font-size: calc(var(--font-size-of-home) - .5rem);
+        margin-left: 2.8rem;
+    }
+    .front-text.text3 #changing-name #name{
+        font-size: calc(var(--font-size-of-home) );
+    }
+    #dark-theme-icon{
+        right: 1.2rem;        top: 4rem;
+        width: 4.5rem;
+    }
+    .introduction, .journey{
+        box-shadow: 0px 0px 6px var(--theme-color);
+    }
+    
+    
+}
+@media (max-width: 700px){
+    #home #home-content{
+        width: 65vw;
+    }
+}
+@media (max-width: 600px){
+    #home #home-content{
+        background-color: hsla(0, 0%, 0%, 0.103);
+        width: 100vw;
+    }
+/* Home 1 */
+        #home #home-content .home-hire-me-btn #hire-me-btn{
+            background-color: var(--theme-color);
+            border: .27rem solid var(--text-color);
+            color: var(--text-color);
+            text-shadow: 0 0 2em var(--text-color);
+            margin-top: 1.5rem;
+        }
+        #home #home-content .home-hire-me-btn #hire-me-btn:hover{
+            background-color: transparent;
+            color: var(--theme-color);
+            border: .2rem solid var(--theme-color);
+            transition: all ease .35s;
+            text-shadow:none;
+        }
+        .front-text.text3 #changing-name{
+            background-color: hsla(0, 0%, 100%, 0.034);
+        }
+        .testimonial{
+            height: 55rem;
+        }
+    }
+
 @media (orientation: portrait){
     .btn-left {
-        left: 5%;
+        top: -2.5%;
+        left: 0%;
       }
-      
-      .btn-right {
-       right: 5%;
+    .btn-right {
+        top: -2.5%;
+        right: 0%;
       }
 }
 @media (max-width: 940px){
@@ -529,7 +506,7 @@ nav.sticky{
         width: auto;
         border: none;
         box-shadow: none;
-        margin: 1rem 0;
+        margin: .5rem 0;
     }
     #image1{
         height: auto;       width: 20vw;
@@ -539,18 +516,17 @@ nav.sticky{
 /* inspiration */
 #inspiration{
     overflow: hidden;
-    margin: 5rem 0 0 0;
     padding: 0%;
 }
 #inspiration h2{
     text-align: center;
-    padding: .4em;
 }
 #inspiration p {
     text-align: center;
 }
     .persons{
         width: 92%;     height: 120vh;
+        min-height: 70rem;
         margin: 4%;     
         position: relative;
     }
@@ -787,6 +763,9 @@ nav.sticky{
         height: 5vw;
         font-size: 1.65em;
     }
+    #inspiration h2{
+        font-size: 3rem;
+    }
 }
 @media (orientation: portrait){
     .persons, .person, .person-pic, .person-detail, .person:hover .person-detail, .other-names, .honourable-names{
@@ -943,7 +922,24 @@ body.dark-theme .container-my-info h3{
 body.dark-theme .container-my-info .col-1 .info{
     background-image: linear-gradient(180deg, hsla(var(--hue-theme-color), var(--saturation-theme-color), var(--lightness-theme-color),0.4), hsla(var(--hue-theme-color), calc(var(--saturation-theme-color) - 5%), calc(var(--lightness-theme-color) + 20%), 0.3), var(--background-color));
 }
+.hobbies{
+    margin: 0;
+}
+.hobbies a{
+    margin: 0 5px;
+    font-size: 2.5rem;
+    color: var(--theme-color);
+}
+.hobbies a:hover{
+    text-shadow: 0 0 .5em var(--theme-color);
 
+}
+body.dark-theme .hobbies a{
+    color: var(--secondary-color);
+}
+body.dark-theme .hobbies a:hover{
+    text-shadow: 0 0 .2em var(--secondary-color);
+}
 
 .col-2{
     width: 28%;
@@ -984,49 +980,6 @@ body.dark-theme .container-my-info .col-1 .info{
     top: 30%;
 }
 
-.side-div{
-    width: 100%;
-    margin-top: 2em;
-}
-.side-div > div{
-    position: absolute;
-    width: 28%;     height: 5em;
-    box-shadow: 0 0 1em hsla(var(--hue-theme-color), var(--saturation-theme-color), var(--lightness-theme-color), 0.2);
-    padding: .2% 0 1% 0;
-    filter: blur(.4px);
-    color: var(--secondary-color);
-    text-shadow: 0 0 .1em var(--secondary-color);
-    border-radius: .4em;
-    overflow: hidden;
-}
-.education > div{
-    left: 0%;
-    text-align: left;
-    background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0),  var(--theme-color));
-}
-.hobbies > div{
-    margin-top: 6em;
-    right: 0%;
-    text-align: right;
-    background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0),  var(--theme-color));
-}
-.hobbies h3, .education h3{
-    font-size: 1.8em;
-    margin: .5%;
-}
-.hobbies div .hobbies-list a{
-    font-size: 1.5em;
-    margin: .2em .6em;
-    color: var(--secondary-color);
-    text-shadow: 0 0 .3em var(--theme-color);
-}
-.hobbies div .hobbies-list a:hover{
-    text-shadow: 0 0 .1em var(--secondary-color);
-}
-.education-list span{
-    color: orange;
-}
-
 @media (max-width: 770px){
 
     .container-my-info{
@@ -1039,12 +992,18 @@ body.dark-theme .container-my-info .col-1 .info{
     .container-my-info h3{
         position: absolute;     top: -4rem;
         border-radius: .17em;
-        font-size: 6.5vw;
+        font-size: 4rem;
         padding: 0 2%;
     }
     .container-my-info .col-1{
         width: 100%;
-        height: 100rem;
+        height: 105rem;
+    }
+    .container-my-info .col-1 > div{
+        margin: 5% 2% 0% 2%;
+        display: flex;
+        gap: 1.2rem;
+        justify-content: space-around;  align-items: center;
     }
     .container-my-info .col-1 .info{
         height: 22%;
@@ -1064,12 +1023,13 @@ body.dark-theme .container-my-info .col-1 .info{
     .side-div > div{
         width: 45%;
     }
-    .hobbies div .hobbies-list a{
-        font-size: 1.3em;
+    .hobbies a{
+        font-size: 2rem;
     }
 }
+
 .ability{
-    margin: 20em 0 0 0;
+    margin: 5rem 0 0 0;
     padding: 5%;
     width: 100%;
     height: 70vh;
@@ -1217,9 +1177,11 @@ body.dark-theme .container-my-info .col-1 .info{
     border-radius: 1em;
     height: 100%;
     width: 0%;
+    --skill-animation-speed: 5s;
 }
-.skill-bar .photoshop-skill{
-    animation: 1.8s forwards photoshop-fill;
+
+.skill-bar .photoshop-skill.animate{
+    animation: var(--skill-animation-speed) forwards photoshop-fill;
 }
 @keyframes photoshop-fill {
     100%{
@@ -1227,7 +1189,7 @@ body.dark-theme .container-my-info .col-1 .info{
     }
 }
 .skill-bar .css-skill{
-    animation: 1.8s forwards css-fill;
+    animation: var(--skill-animation-speed) forwards css-fill;
 }
 @keyframes css-fill {
     100%{
@@ -1235,7 +1197,7 @@ body.dark-theme .container-my-info .col-1 .info{
     }
 }
 .skill-bar .lr-skill{
-    animation: 1.8s forwards lr-fill;
+    animation: var(--skill-animation-speed) forwards lr-fill;
 }
 @keyframes lr-fill {
     100%{
@@ -1243,7 +1205,7 @@ body.dark-theme .container-my-info .col-1 .info{
     }
 }
 .skill-bar .pr-skill{
-    animation: 1.8s forwards pr-fill;
+    animation: var(--skill-animation-speed) forwards pr-fill;
 }
 @keyframes pr-fill {
     100%{
@@ -1251,7 +1213,7 @@ body.dark-theme .container-my-info .col-1 .info{
     }
 }
 .skill-bar .blender-skill{
-    animation: 1.8s forwards blender-fill;
+    animation: var(--skill-animation-speed) forwards blender-fill;
 }
 @keyframes blender-fill {
     100%{
@@ -1260,7 +1222,7 @@ body.dark-theme .container-my-info .col-1 .info{
 }
 
 .skill-bar .html-skill{
-    animation: 1.8s forwards html-fill;
+    animation: var(--skill-animation-speed) forwards html-fill;
 }
 @keyframes html-fill {
     100%{
@@ -1268,7 +1230,7 @@ body.dark-theme .container-my-info .col-1 .info{
     }
 }
 .skill-bar .js-skill{
-    animation: 1.8s forwards js-fill;
+    animation: var(--skill-animation-speed) forwards js-fill;
 }
 @keyframes js-fill {
     100%{
@@ -1276,7 +1238,7 @@ body.dark-theme .container-my-info .col-1 .info{
     }
 }
 .skill-bar .c-skill{
-    animation: 1.8s forwards c-fill;
+    animation: var(--skill-animation-speed) forwards c-fill;
 }
 @keyframes c-fill {
     100%{
@@ -1284,13 +1246,15 @@ body.dark-theme .container-my-info .col-1 .info{
     }
 }
 .skill-bar .python-skill{
-    animation: 1.8s forwards python-fill;
+    animation: var(--skill-animation-speed) forwards python-fill;
 }
 @keyframes python-fill {
     100%{
         width: 2%;
     }
 }
+
+
 @media (min-width: 901px){
     .skills.swiper{
         display: none;
@@ -1346,12 +1310,65 @@ body.dark-theme .container-my-info .col-1 .info{
     }
 
 }
-@media (orientation: portrait){
-   
+
+@media (orientation: portrait) {
+    .ability{
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .ability .abiltiy-1{
+        color: var(--secondary-color);
+        position: absolute;
+        top: -10%;
+        padding: 0 2%;
+        z-index: 2;
+        width: 90%;
+        height: 11rem;
+        min-height: fit-content;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: inherit;
+        border-radius: 5px;
+        text-align: center;
+        filter: blur(.3px);
+        transition: .3s;
+    }
+    .back-circle-1{
+        display: none;
+    }
+    .skills.swiper{
+        width: 90%;     height: 32rem;
+        max-height: none;
+        padding: 1.5%;
+        background: hsla(0, 0%, 0%, .6);
+    }
+    .coding-skills, .designing-skills{
+        width: 46%;     height: 100%;
+        padding: 0%;
+    }
+    .swiper-slide{
+        position: relative;
+        width: 100%;
+        margin: 0% 0 2% 0;
+        padding-top: 0% !important;
+        padding: 3%;
+    }
+    .skills h3{
+        text-align: center;
+        font-size: 1.8em;
+        margin-bottom: 2%;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        position: absolute;
+        top: 15%;
+        color: var(--secondary-color);
+        height: 0;
+    }
+    .swiper-button-prev::after, .swiper-button-next::after{
+        font-size: 1.5em;
+    }
+
 }
-
-
-
 
 
 
@@ -1367,16 +1384,15 @@ body.dark-theme .container-my-info .col-1 .info{
     justify-content: space-evenly;
     padding: 2%;
     width: 100%;        height: 100vh;
-    margin-top: 3rem;
+    margin-top: 2.2rem;
     /* background-color: red; */
 }
 .project-dis-info{
     display: flex;
     flex-direction: column;
-    gap: 46px;
+    gap: 5.5rem;
     align-items: center;
     width: fit-content;
-    /* background-color: green; */
 }
 .project-display{
     background-image: linear-gradient(120deg, hsl(0, 0%, 15%),hsl(0, 0%, 20%),hsl(0, 0%, 25%),hsl(0, 0%, 30%),hsl(0, 0%, 30%),hsl(0, 0%, 40%),hsl(0, 0%, 50%),hsl(0, 0%, 45%),hsl(0, 0%, 50%),hsl(0, 0%, 70%), hsl(0, 0%, 40%));
@@ -1487,7 +1503,10 @@ body.dark-theme .container-my-info .col-1 .info{
 .tv-note h3{
     margin: 0%;
 }
-
+.project-heading{
+    font-size: 3rem;
+    text-align: center;
+}
 .project-card{
     margin: 0 1vw 1.2vw 1vw;        padding: 1.5%;
     background-color: hsla(var(--hue-theme-color), calc(var(--saturation-theme-color) - 5%), var(--lightness-theme-color), 0.7);
@@ -1496,6 +1515,10 @@ body.dark-theme .container-my-info .col-1 .info{
     border: solid .1em var(--theme-color);
     box-shadow: 0 0 .6em var(--theme-color);
     overflow: hidden;
+}
+.project-card.active{
+    border: solid .1em var(--secondary-color);
+    font-weight: bold;
 }
 .project-card h3{
     margin: 0;
@@ -1611,6 +1634,9 @@ body.dark-theme .container-my-info .col-1 .info{
     .project-info{ 
         height: calc(100vh - 320px);
     }
+    .project-heading{
+        font-size: 2rem;
+    }
 }
 @media (orientation: portrait){
     .project-body{
@@ -1629,6 +1655,9 @@ body.dark-theme .container-my-info .col-1 .info{
         border-radius: .6em;
         width: 225px;     max-width: 900px;
         height: 400px;   max-height: 500px;
+    }
+    .project-heading{
+        font-size: 2rem;
     }
     .tv-design-1{
         width: .5em;    height: .5em;

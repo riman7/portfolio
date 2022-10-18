@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <title>Portfolio of Riman Maharjan</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -26,7 +28,7 @@
                 <li class="active"><a href="">Home</a></li>
                 <li><a href="./pages/about.html">About</a></li>
                 <li><a href="./pages/projects.html">Projects</li>
-                <li><a href="./pages/contact.html">Contact Me</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -39,7 +41,7 @@
     <section class="home" id="home">
         <div id="home-content">
             <div class="front-text text1">Hey,</div>
-            <div class="front-text text2"> My <small>Name is</small> <big class="my-name">R<small>IMAN</small> M<small>AHARJAN</small></big></div>
+            <div class="front-text text2"> My <small>Name is</small> <span class="my-name">R<small>IMAN</small> M<small>AHARJAN</small></span></div>
             <div class="front-text text3">W<small>ELCOME to</small> portfolio <small>of a</small> 
                 <div id="changing-name">
                     "<div id="name">Programer</div>"
@@ -67,6 +69,8 @@
             </div>
         </div>
         </div>
+
+
     <div class="testimonial">
         <h2>Testimonial</h2>
         <div class="slider">
@@ -74,7 +78,7 @@
                 Your love makes me strong and your hates makes me unstoppable.</p></div></div>
             <div class="slide s2"><div class="box box2"><i class="fa fa-quote-left"></i><p>Hope for the best and perpare for the worst.</p></div></div>
             <div class="slide s3"><div class="box box3"><i class="fa fa-quote-left"></i><p> Once upon a time, a wise man said nothing. So speak only when your words are better than silence.</p></div></div>
-            <div class="slide s4"><div class="box box4"><i class="fa fa-quote-left"></i><p> Once upon a time, a wise man said nothing. So speak only when your words are better than silence.</p></div></div>
+            <div class="slide s4"><div class="box box4"><i class="fa fa-quote-left"></i><p> Your words can cut deeper than a knife.</p></div></div>
             <div class="slide s5"><div class="box box5"><i class="fa fa-quote-left"></i><p> Once upon a time, a wise man said nothing. So speak only when your words are better than silence.</p></div></div>
             <div class="slide s6"><div class="box box6"><i class="fa fa-quote-left"></i><p> Once upon a time, a wise man said nothing. So speak only when your words are better than silence.</p></div></div>
             <button class="btn btn-left"> <i class="fa fa-arrow-left" aria-hidden="true"></i></button>
@@ -83,10 +87,6 @@
         
      </div>
 
-        </div>
-
-
-    </div>
 
         <div id="inspiration">
             <h2>Inspiration of My LIFE</h2>
@@ -178,11 +178,50 @@
                 
             </div>
         </div>
+
+        <div class="comming-soon">
+            <h3>More Comming Soon...</h3>
+        </div>
             
     </section>
-
-    <script src="./index.js"></script>
     <script src="./darkMode.js"></script>
+    <script src="./index.js"></script>
+
+
+    <!-- Reveal on scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: false,
+            distance:'200px',
+            duration: 1000,
+            delay: 200
+        })
+    ScrollReveal().reveal(".intro");
+    ScrollReveal().reveal(".intro h2",{
+        distance:'150px',
+        delay: 350
+    })
+    ScrollReveal().reveal(".intro img",{
+        distance: 0,
+        delay: 450
+    });
+    ScrollReveal().reveal(".introduction h2",{
+        origin: 'left'
+    })
+    ScrollReveal().reveal(".journey h2",{
+        origin: 'right'
+    })
+    ScrollReveal().reveal(".intro p",{
+        distance: 0,
+        delay: 500
+    });
+    </script>
+
+    <!-- //Reveal on scroll// -->
+
+    
+
     
 </body>
 </html>
