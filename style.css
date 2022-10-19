@@ -244,6 +244,9 @@ nav.sticky{
     box-shadow: 0px 0px 6px var(--theme-color);
     overflow: hidden;
 }
+body.dark-theme .introduction, body.dark-theme .journey{
+    box-shadow: 0 0 1.5rem var(--theme-color), 0 0 .6rem var(--secondary-color) ;
+}
 .journey h2{
     text-align: right;
 }
@@ -1085,23 +1088,27 @@ body.dark-theme .hobbies a:hover{
 }
 .back-circle-2{
     height: 13vw;        width: 13vw;
+    min-height: 7rem;       min-width: 7rem;
     background-color: hsla(120, 100%, 35%, 0.9);
     bottom: 5%;
     right: 12%;
 }
 .back-circle-3{
     height: 10.08vw;        width: 10.08vw;
+    min-height: 5rem;       min-width: 5rem;
     background-color: hsla(240, 100%, 50%, 0.9);
     bottom: 30%;        right: 30%;
 }
 .back-circle-4{
     height: 7.2vw;        width: 7.2vw;
+    min-height: 9rem;       min-width: 9rem;
     background-color: blue;
     bottom: 7%;
     right: 80%;
 }
 .back-circle-5{
     height: 12.96vw;        width: 12.96vw;
+    min-height: 7rem;       min-width: 7rem;
     background-color: hsla(0, 100%, 50%, 0.9);
     bottom: 9%;
     right: 50%;
@@ -1109,16 +1116,19 @@ body.dark-theme .hobbies a:hover{
 }
 .back-circle-6{
     height: 10.08vw;        width: 10.08vw;
+    min-height: 7rem;       min-width: 7rem;
     background-color: red;
     bottom: 55%;        right: 9%;
 }
 .back-circle-7{
     height: 8.64vw;        width: 8.64vw;
+    min-height: 8rem;       min-width: 8rem;
     background-color: blue;
     bottom: 1%;     right: 5%;
 }
 .back-circle-8{
     height: 11.52vw;        width: 11.52vw;
+    min-height: 6rem;       min-width: 6rem;
     background-color: green;
     bottom: 4%;
     right: 48%;
@@ -1126,6 +1136,7 @@ body.dark-theme .hobbies a:hover{
 }
 .back-circle-9{
     height: 11.52vw;        width: 11.52vw;
+    min-height: 15rem;       min-width: 15rem;
     background-color: red;
     bottom: 58%;        right: 42%;
 }
@@ -1180,12 +1191,12 @@ body.dark-theme .hobbies a:hover{
     --skill-animation-speed: 5s;
 }
 
-.skill-bar .photoshop-skill.animate{
+.skill-bar .photoshop-skill{
     animation: var(--skill-animation-speed) forwards photoshop-fill;
 }
 @keyframes photoshop-fill {
     100%{
-        width: 80%;
+        width: 93%;
     }
 }
 .skill-bar .css-skill{
@@ -1355,7 +1366,7 @@ body.dark-theme .hobbies a:hover{
     }
     .skills h3{
         text-align: center;
-        font-size: 1.8em;
+        font-size: 3rem;
         margin-bottom: 2%;
     }
     .swiper-button-prev, .swiper-button-next{
@@ -1367,7 +1378,11 @@ body.dark-theme .hobbies a:hover{
     .swiper-button-prev::after, .swiper-button-next::after{
         font-size: 1.5em;
     }
-
+}
+@media (max-width: 330px){
+    .skills h3{
+        font-size: 2rem;
+    }
 }
 
 
@@ -1404,6 +1419,13 @@ body.dark-theme .hobbies a:hover{
     position: relative;
     transition: .1s;
     flex-shrink: 0;
+}
+.project-display.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+    background-color: hsla(0, 0%, 10%, 0.9);
 }
 .tv-design:not(.tv-design-3){
     position: absolute;
@@ -1478,13 +1500,17 @@ body.dark-theme .hobbies a:hover{
 
     /* background-color: yellow; */
 }
-.project-display embed{
+.project-display embed, .project-display img{
     width: 100%;
     height: 334.5px;
     border: none;
     border-radius: 0%;
     box-shadow: 0 0 .5em hsla(0, 0%, 50%, 0.445);
     overscroll-behavior: contain;
+}
+.project-display img{
+    width: 100%;
+    height: auto;
 }
 .tv-note{
     margin: 0 1vw .5vw 1vw;
@@ -1527,10 +1553,7 @@ body.dark-theme .hobbies a:hover{
     color: var(--secondary-color);
     text-shadow: 0 0 .1em var(--secondary-color);
 }
-.portfolio-project{
-    display: none;
-}
-.black-jack-project{
+.portfolio-project, .wix-project, .black-jack-project{
     display: none;
 }
 .project-info{
@@ -1644,10 +1667,12 @@ body.dark-theme .hobbies a:hover{
     }
     .project-container{
         height: 100vh;
-        margin-top: 2em;
+        margin-top: 4rem;
+        overflow: hidden;
+        padding: 3%;
     }
     .project-dis-info{
-        gap: 8px;
+        gap: 1.5rem;
     }
     .project-display{
         border: solid black .4rem;
@@ -1671,8 +1696,8 @@ body.dark-theme .hobbies a:hover{
         border-radius: 2%;
     }  
     .project-details{
-        height: 90vh;
-        min-width: 170px;
+        height: 400px;   max-height: 500px;
+        min-width: max-content;
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -1687,17 +1712,48 @@ body.dark-theme .hobbies a:hover{
         font-size: .9em;
     }
     .project-info{
-        border-radius: .4em;
-        width: 100%;        height: calc(100vh - 460px);
+        position: absolute;
+        left: 50%;      transform: translate(-50%);
+        top: 46.5rem;
+        border-radius: .2em;
+        width: 92vw;        height: calc(100vh - 48rem);
+        max-height: fit-content;
+        padding: 3%;
     }
     .project-info a{
-        font-size: 1.2em;
+        display: block;
+        font-size: 3rem;
+        top: 5%;
+        right: 5%;
     }
     .project-info h3{
-        font-size: 1.2em;
+        font-size: 2.5rem;
     }
     .project-info p{
         font-size: .8em;
+    }
+}
+@media (max-width: 380px){
+    .project-display{
+        width: 20rem; 
+        height: 35.5rem;  
+    }
+    .tv-design-1{
+        width: .4em;    height: .4em;
+    }
+    .project-display embed{
+         height: 33.45rem;
+    }  
+    .project-details{
+        height: 35.5rem;  
+    }
+    .project-info{
+        top: 41.5rem;
+        height: calc(100vh - 48rem);
+    }
+    .project-info a{
+        position: absolute;
+        display: block;
     }
 }
 

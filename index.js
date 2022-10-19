@@ -12,8 +12,6 @@ menuBtnClicked = () => {
     headBar.classList.toggle("active");
 }
 
-console.log(document.URL);
-console.log(window.location.pathname);
 
 
 // Changing Name
