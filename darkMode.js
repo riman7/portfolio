@@ -1,3 +1,9 @@
+// preloader
+window.onload = function(){
+    //hide the preloader
+    document.querySelector(".loading").style.display = "none";
+}
+
 // When Page open
 if(document.body.classList.contains('dark-theme')){
     localStorage.setItem("mode", "dark-theme");

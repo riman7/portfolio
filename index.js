@@ -1,3 +1,8 @@
+window.onload = function(){
+    //hide the preloader
+    document.querySelector(".loading").style.display = "none";
+}
+
 //Nav bar background appear on scroll
 var headBar = document.querySelector("#headBar");
 window.addEventListener("scroll", function(){
