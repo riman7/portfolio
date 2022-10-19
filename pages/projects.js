@@ -16,6 +16,8 @@ const portfolioProject =  document.getElementById('portfolioProject');
 const portfolioProjectInfo =  document.getElementById('portfolioProjectInfo');
 const blackJackProject = document.getElementById('blackJackProject');
 const blackJackProjectInfo = document.getElementById('blackJackProjectInfo');
+const simpleCalcProjectInfo = document.getElementById('simpleCalcProjectInfo');
+const simpleCalcProject = document.getElementById('simpleCalcProject');
 const wixProject = document.getElementById('wixProject');
 const wixInfo = document.getElementById('wixProjectInfo');
 const tvColor = document.getElementById('tvColor');
@@ -26,6 +28,8 @@ turnOffTv = () =>{
     portfolioProjectInfo.style.display = "none";
     blackJackProject.style.display = "none";
     blackJackProjectInfo.style.display = "none";
+    simpleCalcProject.style.display = "none";
+    simpleCalcProjectInfo.style.display = "none";
     wixProject.style.display = "none";
     wixInfo.style.display = "none";
     peojectMoreInfo.style.display = "block";
@@ -51,6 +55,14 @@ blackJackClicked = () =>{
     blackJackProject.style.display = "block";
     peojectMoreInfo.style.display = "none";
     blackJackProjectInfo.style.display = "block";
+    tvOn = true;
+    tvColorChange();
+}
+simpleCalcClicked = () =>{
+    turnOffTv();
+    simpleCalcProject.style.display = "block";
+    peojectMoreInfo.style.display = "none";
+    simpleCalcProjectInfo.style.display = "block";
     tvOn = true;
     tvColorChange();
 }

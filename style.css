@@ -505,7 +505,7 @@ body.dark-theme .introduction, body.dark-theme .journey{
         display: block;
         margin: 1rem 10vw;
     }
-    .introduction, .journey{
+    .introduction, .journey, body.dark-theme .introduction, body.dark-theme .journey{
         width: auto;
         border: none;
         box-shadow: none;
@@ -1553,7 +1553,7 @@ body.dark-theme .hobbies a:hover{
     color: var(--secondary-color);
     text-shadow: 0 0 .1em var(--secondary-color);
 }
-.portfolio-project, .wix-project, .black-jack-project{
+.portfolio-project, .wix-project, .black-jack-project, .simple-calc-project{
     display: none;
 }
 .project-info{
