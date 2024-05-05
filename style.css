@@ -24,13 +24,14 @@ text-decoration: none;
     --secondary-color: hsl(41, 100%, 88%);
     --body-text-color: black;
     --transition: ease-out 0.3s;
-    --nav-background-color: hsl(0, 0%, 13%);
+    --nav-background-color: var(--dark-theme-back-colour);
     --background-color: #ffffff;
     --text-background-color: rgba(233, 233, 233, 0.6);
     --font-size-of-home: max(4vw, 40px);
     --margin-left-of-home: 2rem;
     --background-img-1: linear-gradient(to bottom, hsl(0, 0%, 10%), hsl(0, 0%, 6%));
     --background-img-2: linear-gradient(to bottom, hsl(0, 0%, 10%), hsl(0, 0%, 0%));
+    --dark-theme-back-colour: hsl(225, 25%, 13%);
 }
 
 /* Preloader*/
@@ -156,7 +157,7 @@ text-decoration: none;
 
 
 .dark-theme{
-    --background-color: #181C28;
+    --background-color: var(--dark-theme-back-colour);
     /* --body-text-color: white; */
     --body-text-color: hsl(41, 100%, 90%);
     --text-background-color: rgba(0, 0, 0, 0.6);
@@ -212,7 +213,7 @@ body h2{
     position: fixed;
     top: 0;     left: 0;
     z-index: 90;
-    width: 100vw;       height: 4rem;
+    width: 100vw;       height: 5rem;
     display: flex;
     justify-content: space-between;
     padding: 0 1em;
@@ -293,6 +294,7 @@ nav.sticky{
     text-align: left;
     margin: .7rem;      margin-left: var(--margin-left-of-home);
     transition: var(--transition);
+    font-family: "Freeman", sans-serif;
     cursor: default;
 }
 .text1{
@@ -329,6 +331,7 @@ nav.sticky{
     display: flex;
     justify-content: center;
     transition: .9s;
+    margin-top: 7px;
 }
 #home #home-content .home-hire-me-btn #hire-me-btn{
     margin-top: .5rem;
@@ -1924,7 +1927,8 @@ body.dark-theme .hobbies a:hover{
     right: -15px;
     top: 50%;
     transform: translateY(-50%);
-    background: hsl(240, 5%, 70%);
+    background: hsl(274, 100%, 88%);
+    /* middle bar line */
   }
   .content .left-side .details{ 
     margin: 14px;
@@ -1945,17 +1949,19 @@ body.dark-theme .hobbies a:hover{
     color: hsl(0, 0%, 90%);
   }
   body.dark-theme .content .left-side .details .text-one,  body.dark-theme .content .left-side .details .text-two{
-    color: hsl(0, 0%, 65%);
+    color: hsla(0, 0%, 100%, 0.914);
   }
   .container .content .right-side{
     width: 75%;
     margin-left: 75px;
   }
   .content .right-side .topic-text{
-    font-size: 26px;
+    font-size: 35px;
+    font-family: "Freeman", sans-serif;
     font-weight: 600;
     margin-bottom: 4px;
-    text-shadow: 0 0 2em var(--secondary-color);
+    color: hsla(273, 100%, 96%, 0.955);
+    /* text-shadow: 0 0 1em var(--secondary-color); */
   }
   .right-side .input-box{
     height: 50px;
