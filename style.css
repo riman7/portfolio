@@ -2,6 +2,12 @@
     font-family: Staatliches ;
     src: url(https://fonts.googleapis.com/css2?family=Staatliches&display=swap);
 }
+.freeman-regular {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 *{
 margin: 0;      padding: 0;
 box-sizing: border-box;
@@ -221,10 +227,11 @@ body h2{
     margin-left: 4rem;
     display: inline-block;
     font-size: 2.5rem;
+    font-family: "Freeman", sans-serif;
     color: var(--secondary-color);
 }
 #navbar ul li.active{
-    text-shadow: .01em .01em .8em white;
+    text-shadow: .01em .01em .7em white;
     cursor: default;
 }
 #navbar ul li a {
@@ -339,10 +346,10 @@ nav.sticky{
 }
 .home-hire-me-btn #hire-me-btn:hover{
     background-color: var(--theme-color);
-    border: .2rem solid var(--secondary-color);
+    border: .27rem solid var(--secondary-color);
     color: var(--secondary-color);
-    font-weight: 800;
     text-shadow: 0 0 2em var(--secondary-color);
+    box-shadow: hsla(0, 0%, 100%, 0.8) 0 0 .5em;
 }
 
 /* Home2 */
