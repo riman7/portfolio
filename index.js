@@ -39,7 +39,7 @@ setInterval(changeName, 12000);
 
 //Hire me
 hireMe = () =>{
-    alert("Fool, You don't deserve me. XD")
+    alert("Thank you for thinking about it.")
 }
 
 // Other Names
